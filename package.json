@@ -1,14 +1,12 @@
 {
-  "name": "node-red-project",
-  "description": "A Node-RED Project",
-  "version": "0.0.1",
-  "private": true,
+  "name": "node-red-app",
+  "version": "1.0.0",
+  "description": "Déploiement Node-RED personnel",
+  "main": "settings.js",
   "scripts": {
-    "start": "npx node-red -v -u ."
+    "start": "node node_modules/node-red/red.js -s settings.js"
   },
   "dependencies": {
-    "node-red": "^3.1.0",
-    "node-red-dashboard": "~3.6.5",
-    "node-red-contrib-ui-led": "~0.4.11"
+    "node-red": "^3.1.0"
   }
 }
